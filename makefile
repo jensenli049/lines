@@ -14,6 +14,7 @@ draw.o: draw.c draw.h display.h ml6.h
 display.o: display.c display.h ml6.h
 	$(CC) $(CFLAGS) -c display.c
 
+
 run: main
 	./main
 
