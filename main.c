@@ -33,6 +33,11 @@ int main() {
   c.blue = MAX_COLOR;
   for(i = 0, j = YRES-1; i < XRES, j >= 0; i+=5, j-=5)
     draw_line(0, i, i, YRES, s, c);
+
+  c.red = MAX_COLOR;
+  c.green = MAX_COLOR;
+  draw_line(XRES/2-10, YRES/2-10, XRES/2+10, YRES/2+10, s, c);
+  draw_line(XRES/2-10, YRES/2+10, XRES/2+10, YRES/2-10, s, c);
   
   display(s);
   save_extension(s, "lines.png");
